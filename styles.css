@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url(fonts/Manrope.ttf);
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(fonts/Inconsolata.ttf);
+}
+
+html{
+    height: auto;
+}
+
+/*------------NAVBAR---------------*/
+nav{
+   /* position: fixed; */
+   height: 80px;
+
+   
+}
+
+.navbar .container-fluid{
+    margin-top: 0px;
+    /* background-color: pink; */
+    /* height: 55px; */
+}
+
+.shadow-lg{
+    background-color: purple;
+}
+
+.navbar-brand{
+    margin-left: 25px;
+    font-size: 42px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+.offcanvas-body .navbar-nav .nav-item{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+a.nav-link{
+    font-size: large;
+    color: purple;
+    font-family: 'Manrope';
+}
+
+.dropdown-item {
+    color: purple;
+    font-family: 'Manrope';
+}
+
+/*------------BODY/CONTAINERS---------------*/
+
+body{
+    /* min-height:100vh; */
+    background-image: url(img/lavenderbg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+} 
+
+.container{
+    margin-top: 175px;
+}
+
+.container-fluid{
+    margin-top: 190px;
+}
+
+.col-md-2{
+    margin: auto; 
+    margin-right: 80px; 
+    margin-left: 150px; 
+    margin-bottom: 60px; 
+    margin-bottom: 120px; /* Adjust bottom margin */
+    width: 27%; /* Set the width to occupy 48% of the container width */
+
+}
+
+
+.rounded-circle.box {
+    background-image: url(img/me.jpeg);
+    height: 450px;
+    width: 450px;
+    border: 1px solid #dee2e6; /* Light grey border */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+@media only screen and (max-width: 600px) {
+    .rounded-circle.box {
+        height: 350px;
+        width: 350px;
+        
+    }
+
+    .rounded-square.box {
+        height: 5px;
+        width: 5px;
+    }
+
+    .col-md-2{
+        margin-left: 12px; 
+    }
+       
+}
+.rounded-square.box {
+    background-color: lavender; 
+    height: 420px;
+    width: 420px;
+    border: 1px solid #dee2e6; 
+    padding-top: 20px;
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+    border-style: groove;
+    
+}
+
+.rounded-square.box p{
+    margin: 20px;
+    font-size: larger;
+    font-family: 'Inconsolata';
+}
+
+a.btn.btn-custom.btn-md{
+    font-family: 'Inconsolata';
+}
+
+.row.gx-5 .col p{
+    font-family: 'Inconsolata';
+}
+.hover-grow:hover .box {
+    transform: scale(1.1); /* Increase size by 10% */
+}
+
+
+.container-md .row .col {
+    /* background-color: pink; */
+    padding: 15px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+.link-secondary {
+    transition: font-size 0.3s ease, transform 0.3s ease; /* Smooth transition for font size and transform */
+}
+
+.link-secondary:hover {
+    font-size: 1.50em; /* Increase font size */
+    transform: scale(1.1); /* Scale up the button */
+}
+
+#socials.container-md.text-center .row{
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+
+a.btn.btn-custom {
+    background-color: lavender;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+a.btn.btn-custom:hover{
+    font-size: 1.1em; 
+    transform: scale(1.3); 
+    color: purple;
+}
+
+/*-------ABOUT ME-----------*/
+
+.card{
+    height: 680px;
+    transition: transform 0.3s ease;
+    font-size: large;
+}
+
+.card.hover-grow:hover{
+    transform: scale(1.1); 
+}
+
+.card-title{
+    font-family: 'Manrope';
+}
+
+.card-text, .list-item{
+    font-family: 'Inconsolata';
+}
+
+#card2{
+    font-size: 17px;
+    /* overflow: scroll; */
+}
+
+.img-fluid{
+    margin-left: 17px
+}
+
+/*---------------CODE-------------*/
+#codecontainer.container-md{
+    margin-top: 190px;
+}
+
+#code1.card{
+    height: 490px;
+}
+
+#code2.card{
+    height: 350px;
+}
+
+#code3.card{
+    height: 430px;
+}
+
+#code1 .card-header,#code2 .card-header,
+#code3 .card-header{
+    background-color: lavender;
+    color: purple;
+}
+
+@media only screen and (max-width: 600px) {
+    #code1.card{
+        height: 1160px;
+    }
+    
+    #code2.card{
+        height: 700px;
+    }
+    
+    #code3.card{
+        height: 920px;
+    }
+}
+.row.text-center h1{
+    color: purple;
+    font-family: 'Manrope';
+}
+
+/*------------CONTACT FORM---------------*/
+#contactform {
+    margin-left: 515px;
+}
+
+@media only screen and (max-width: 600px) {
+    form{
+        width: 350px;
+        margin: auto;
+    }
+
+    button.btn.btn-custom {
+        margin-left: 135px;
+    }
+}
+
+/*------------FOOTER---------------*/
+footer{
+    color: white;
+    margin-bottom: 80px;
+}
