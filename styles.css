@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Manrope';
-    src: url(fonts/Manrope.ttf);
+    src: url(Manrope.ttf);
 }
 
 @font-face {
     font-family: 'Inconsolata';
-    src: url(fonts/Inconsolata.ttf);
+    src: url(Inconsolata.ttf);
 }
 
 html{
@@ -60,7 +60,7 @@ a.nav-link{
 
 body{
     /* min-height:100vh; */
-    background-image: url(img/lavenderbg.jpeg);
+    background-image: url(lavenderbg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -87,7 +87,7 @@ body{
 
 
 .rounded-circle.box {
-    background-image: url(img/me.jpeg);
+    background-image: url(me.jpeg);
     height: 450px;
     width: 450px;
     border: 1px solid #dee2e6; /* Light grey border */
